@@ -1,0 +1,30 @@
+.nav-container .nav-bar {
+  background-color: #026abc;
+  height: 60px;
+  width: 100%;
+  position: fixed; }
+  .nav-container .nav-bar .brand {
+    padding-left: 20px;
+    float: left; }
+    .nav-container .nav-bar .brand h2 {
+      color: #f1f1f1; }
+      .nav-container .nav-bar .brand h2 #skinny {
+        font-weight: 100; }
+  @media screen and (min-width: 600px) {
+    .nav-container .nav-bar .btn-container {
+      float: right;
+      margin: 10px;
+      display: flex; } }
+  @media screen and (max-width: 599px) {
+    .nav-container .nav-bar .btn-container {
+      display: none; } }
+  @media screen and (min-width: 600px) {
+    .nav-container .nav-bar .collapse-container {
+      display: none; } }
+  @media screen and (max-width: 599px) {
+    .nav-container .nav-bar .collapse-container {
+      display: flex;
+      float: right;
+      margin-right: 20px; } }
+
+/*# sourceMappingURL=NavBar.css.map */
