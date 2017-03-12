@@ -1,0 +1,55 @@
+.App{
+    padding:20px;
+    background-color:#f1f1f1;
+    height: 100vh;
+    border:15px solid white;
+    .home-wrapper{
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        height:100%;
+        .inner-container{
+            margin: auto;
+            .social-container{
+                text-align: center;
+                ul{
+                    text-align: center;
+                    padding:0px;
+                    li{
+                        margin:10px;
+                        display:inline-block;
+                        list-style: none;
+                        &:hover{
+                            transform:translateY(-2px);
+                            // transition: all 1s ease;
+                            // -webkit-transition: all 1s ease;
+                            // -moz-transition: all 1s ease;
+                            
+                        }
+                        img{
+                            width:40px;
+                            height:40px;
+                        }
+                    }
+                }
+            }
+            .nav-homepage{
+                ul{
+                    text-align: center;
+                    padding:0px;
+                    li{
+                        margin:10px;
+                        display:inline-block;
+                        list-style: none; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+a:-webkit-any-link {
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+}

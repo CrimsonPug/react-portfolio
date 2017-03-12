@@ -45,10 +45,10 @@ export default class PopoverExampleSimple extends React.Component {
           onRequestClose={this.handleRequestClose}
         >
           <Menu>
-            <MenuItem primaryText="Linkedin" />
-            <MenuItem primaryText="Twitter" />
-            <MenuItem primaryText="GitHub" />
-            <MenuItem primaryText="Email" />
+            <MenuItem primaryText="Linkedin" href="https://www.linkedin.com/in/ikram-mustapha/" target="blank"/>
+            <MenuItem primaryText="Twitter" href="https://twitter.com/IkramTM" target="blank"/>
+            <MenuItem primaryText="GitHub" href="https://github.com/CrimsonPug"target="blank" />
+            <MenuItem primaryText="Email" href="mailto:ikram.tuan.mustapha@gmail.com" />
           </Menu>
         </Popover>
       </div>

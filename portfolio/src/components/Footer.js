@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
-import {Link} from 'react-router';
-import './../styles/css/App.css';
+import './../styles/css/Footer.css';
 import Twitter from './../img/socialIcon/twitter.svg';
 import GitHub from './../img/socialIcon/gitHub.svg';
 import Linkedin from './../img/socialIcon/linked.svg';
 import Email from './../img/socialIcon/email.svg';
 
-class App extends Component {
+class Footer extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="home-wrapper">
-          <div className="inner-container">
-            <h2>Ikram <span id="skinny">Mustapha</span></h2>
-            <div className="social-container">
-              <ul>
+      <div className="footer-wrapper">
+         <div className="site-detail">
+            <ul>
                 <li>
                   <a target="blank" href="https://twitter.com/IkramTM">
                     <img src={Twitter} />
@@ -37,32 +32,11 @@ class App extends Component {
                   </a>
                 </li>
               </ul>
+            <p>Copyright © Ikram Mustapha 2017 All Rights Reserved</p>
             </div>
-            <p>I am a web developer and a frisbee chaser</p>
-            <nav className="nav-homepage">
-              <ul>
-                <li>
-                  <Link to="/about">
-                  About Me
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/work">
-                    Work
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about">
-                    Contact 
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default Footer;

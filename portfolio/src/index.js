@@ -12,12 +12,10 @@ import './index.css';
 
 ReactDOM.render(
   <MuiThemeProvider>
-    <Router history={browserHistory}>
-        <Route path="/" component={NavBar}>
-            <IndexRoute component={App} />
+    <Router history={browserHistory}>   
+            <Route path="/" component={App} />
             <Route path="/about" component={About} />
             <Route path="/Work" component={Work} />
-        </Route>
     </Router>
   </MuiThemeProvider>,
   document.getElementById('root')

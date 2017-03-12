@@ -1,0 +1,16 @@
+.about-container{
+    z-index: -10;
+    padding:200px 50px 50px 50px;
+    background-color:#f1f1f1;
+    height: 100%;
+    border:15px solid white;
+    .img-wrapper{
+        text-align:right;
+        // height:200px;
+        // width:150px;
+        img{
+            height:100%;
+            width:100%;
+        }
+    }
+}

@@ -50,19 +50,24 @@ class NavBar extends Component {
           <div className="nav-container">
             <div className="nav-bar">
               <div className="brand">
+                <Link to="/">
                   <h2>Ikram <span id="skinny">Mustapha</span></h2>
+                </Link>
               </div>
               <div className="btn-container">
-                <RaisedButton href="/about" label="Default" style={styles} />
-                <RaisedButton label="Primary" primary={true} style={styles} />
+              <Link to="/about">
+                <RaisedButton label="About" style={styles} />
+              </Link>
+              <Link to="/work">
+                <RaisedButton label="Work" primary={true} style={styles} />
+              </Link>
                 <PopoverExampleSimple/>
               </div>
               <div className="collapse-container">
                 <IconButton
                   iconStyle={styles.mediumIcon}
                   onClick={this.openDrawer}
-                  // style={styles.medium}
-                  
+                  // style={styles.medium}   
                 >
                   <NavigationMenu />
                   <Drawer
@@ -72,8 +77,15 @@ class NavBar extends Component {
                     open={this.state.open}
                     onRequestChange={(open) => this.setState({open})}
                   >
-                    <MenuItem onTouchTap={this.handleClose}>About Me</MenuItem>
-                    <MenuItem onTouchTap={this.handleClose}>Work</MenuItem>
+                    <Link to="/">
+                      <MenuItem onTouchTap={this.handleClose}>Home</MenuItem>
+                    </Link>
+                    <Link to="/about">
+                      <MenuItem onTouchTap={this.handleClose}>About Me</MenuItem>
+                    </Link>
+                    <Link to="/work">
+                      <MenuItem onTouchTap={this.handleClose}>Work</MenuItem>
+                    </Link>
                     <MenuItem onTouchTap={this.handleClose}>Find Me</MenuItem>
                   </Drawer>
                 </IconButton>
