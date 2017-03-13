@@ -4,6 +4,7 @@
   height: 100vh;
   border: 15px solid white; }
   .App .home-wrapper {
+    font-family: 'Lato', sans-serif;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -24,6 +25,12 @@
             .App .home-wrapper .inner-container .social-container ul li img {
               width: 40px;
               height: 40px; }
+      .App .home-wrapper .inner-container .home-title {
+        margin: 0px;
+        font-size: 50px; }
+        @media screen and (max-width: 600px) {
+          .App .home-wrapper .inner-container .home-title {
+            font-size: 30px; } }
       .App .home-wrapper .inner-container .nav-homepage ul {
         text-align: center;
         padding: 0px; }

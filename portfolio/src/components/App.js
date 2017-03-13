@@ -38,7 +38,8 @@ class App extends Component {
                 </li>
               </ul>
             </div>
-            <p>I am a web developer and a frisbee chaser</p>
+            <p className="home-title">A web developer,</p>
+            <p className="home-title">frisbee chaser</p>
             <nav className="nav-homepage">
               <ul>
                 <li>
